@@ -1,0 +1,31 @@
+那么在git服务器上通常会建立一个git这样一个账户，其它人共用这个账户来克隆或推送数据到git仓库中，通常也只需要这个功能，但是如果不加限制，那么其它人可以通过这个git账户登录到主机，那么这样是不安全的，所以需要加以限制，方法如下：
+编辑/etc/passwd这个文件，在文件末尾可以找到类似这样的行：
+git:x:1001:1001::/home/git:/bin/sh
+然后把/bin/sh改为/usr/bin/git-shell，这样git这个账户就只能用来克隆或者推送数据到git仓库中了，而不能用它来登录到主机。
+
+阿里云服务器搭建git
+在Ubuntu系统下安装git，使用命令：
+apt-get install git
+安装成功后可以使用命令git –version查看git版本：
+ 
+增加用户组：
+useradd git
+增加用户组密码：
+passwd git **
+创建文件目录存放git仓库:
+mkdir /home/git
+进入文件：
+cd /home/git
+初始创建git仓库：
+git init --bare project.git
+ 
+在远端克隆服务器端的git仓库：
+git clone username@host:/path/to/repository（例如：git clone git@47.95.215.87:test.git）
+ 
+推送文件：
+git add test.c
+git commit -a –m “ok”
+git push
+git push origin master
+使用git小乌龟代替敲命令推送文件可以参考
+https://www.cnblogs.com/xuanwotianming153/p/8504762.html
