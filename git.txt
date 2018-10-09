@@ -1,31 +1,33 @@
-ÄÇÃ´ÔÚgit·þÎñÆ÷ÉÏÍ¨³£»á½¨Á¢Ò»¸ögitÕâÑùÒ»¸öÕË»§£¬ÆäËüÈË¹²ÓÃÕâ¸öÕË»§À´¿ËÂ¡»òÍÆËÍÊý¾Ýµ½git²Ö¿âÖÐ£¬Í¨³£Ò²Ö»ÐèÒªÕâ¸ö¹¦ÄÜ£¬µ«ÊÇÈç¹û²»¼ÓÏÞÖÆ£¬ÄÇÃ´ÆäËüÈË¿ÉÒÔÍ¨¹ýÕâ¸ögitÕË»§µÇÂ¼µ½Ö÷»ú£¬ÄÇÃ´ÕâÑùÊÇ²»°²È«µÄ£¬ËùÒÔÐèÒª¼ÓÒÔÏÞÖÆ£¬·½·¨ÈçÏÂ£º
-±à¼­/etc/passwdÕâ¸öÎÄ¼þ£¬ÔÚÎÄ¼þÄ©Î²¿ÉÒÔÕÒµ½ÀàËÆÕâÑùµÄÐÐ£º
+é‚£ä¹ˆåœ¨gitæœåŠ¡å™¨ä¸Šé€šå¸¸ä¼šå»ºç«‹ä¸€ä¸ªgitè¿™æ ·ä¸€ä¸ªè´¦æˆ·ï¼Œå…¶å®ƒäººå…±ç”¨è¿™ä¸ªè´¦æˆ·æ¥å…‹éš†æˆ–æŽ¨é€æ•°æ®åˆ°gitä»“åº“ä¸­ï¼Œé€šå¸¸ä¹Ÿåªéœ€è¦è¿™ä¸ªåŠŸèƒ½ï¼Œä½†æ˜¯å¦‚æžœä¸åŠ é™åˆ¶ï¼Œé‚£ä¹ˆå…¶å®ƒäººå¯ä»¥é€šè¿‡è¿™ä¸ªgitè´¦æˆ·ç™»å½•åˆ°ä¸»æœºï¼Œé‚£ä¹ˆè¿™æ ·æ˜¯ä¸å®‰å…¨çš„ï¼Œæ‰€ä»¥éœ€è¦åŠ ä»¥é™åˆ¶ï¼Œæ–¹æ³•å¦‚ä¸‹ï¼š
+ç¼–è¾‘/etc/passwdè¿™ä¸ªæ–‡ä»¶ï¼Œåœ¨æ–‡ä»¶æœ«å°¾å¯ä»¥æ‰¾åˆ°ç±»ä¼¼è¿™æ ·çš„è¡Œï¼š
 git:x:1001:1001::/home/git:/bin/sh
-È»ºó°Ñ/bin/sh¸ÄÎª/usr/bin/git-shell£¬ÕâÑùgitÕâ¸öÕË»§¾ÍÖ»ÄÜÓÃÀ´¿ËÂ¡»òÕßÍÆËÍÊý¾Ýµ½git²Ö¿âÖÐÁË£¬¶ø²»ÄÜÓÃËüÀ´µÇÂ¼µ½Ö÷»ú¡£
+ç„¶åŽæŠŠ/bin/shæ”¹ä¸º/usr/bin/git-shellï¼Œè¿™æ ·gitè¿™ä¸ªè´¦æˆ·å°±åªèƒ½ç”¨æ¥å…‹éš†æˆ–è€…æŽ¨é€æ•°æ®åˆ°gitä»“åº“ä¸­äº†ï¼Œè€Œä¸èƒ½ç”¨å®ƒæ¥ç™»å½•åˆ°ä¸»æœºã€‚
 
-°¢ÀïÔÆ·þÎñÆ÷´î½¨git
-ÔÚUbuntuÏµÍ³ÏÂ°²×°git£¬Ê¹ÓÃÃüÁî£º
+é˜¿é‡Œäº‘æœåŠ¡å™¨æ­å»ºgit
+åœ¨Ubuntuç³»ç»Ÿä¸‹å®‰è£…gitï¼Œä½¿ç”¨å‘½ä»¤ï¼š
 apt-get install git
-°²×°³É¹¦ºó¿ÉÒÔÊ¹ÓÃÃüÁîgit ¨Cversion²é¿´git°æ±¾£º
+å®‰è£…æˆåŠŸåŽå¯ä»¥ä½¿ç”¨å‘½ä»¤git â€“versionæŸ¥çœ‹gitç‰ˆæœ¬ï¼š
  
-Ôö¼ÓÓÃ»§×é£º
+å¢žåŠ ç”¨æˆ·ç»„ï¼š
 useradd git
-Ôö¼ÓÓÃ»§×éÃÜÂë£º
+å¢žåŠ ç”¨æˆ·ç»„å¯†ç ï¼š
 passwd git **
-´´½¨ÎÄ¼þÄ¿Â¼´æ·Ågit²Ö¿â:
+åˆ›å»ºæ–‡ä»¶ç›®å½•å­˜æ”¾gitä»“åº“:
 mkdir /home/git
-½øÈëÎÄ¼þ£º
+è¿›å…¥æ–‡ä»¶ï¼š
 cd /home/git
-³õÊ¼´´½¨git²Ö¿â£º
+åˆå§‹åˆ›å»ºgitä»“åº“ï¼š
 git init --bare project.git
+ä¿®æ”¹project.git çš„æ‰€æœ‰è€…
+chown -R git:git project.git
  
-ÔÚÔ¶¶Ë¿ËÂ¡·þÎñÆ÷¶ËµÄgit²Ö¿â£º
-git clone username@host:/path/to/repository£¨ÀýÈç£ºgit clone git@47.95.215.87:test.git£©
+åœ¨è¿œç«¯å…‹éš†æœåŠ¡å™¨ç«¯çš„gitä»“åº“ï¼š
+git clone username@host:/path/to/repositoryï¼ˆä¾‹å¦‚ï¼šgit clone git@47.95.215.87:test.gitï¼‰
  
-ÍÆËÍÎÄ¼þ£º
+æŽ¨é€æ–‡ä»¶ï¼š
 git add test.c
-git commit -a ¨Cm ¡°ok¡±
+git commit -a â€“m â€œokâ€
 git push
 git push origin master
-Ê¹ÓÃgitÐ¡ÎÚ¹ê´úÌæÇÃÃüÁîÍÆËÍÎÄ¼þ¿ÉÒÔ²Î¿¼
+ä½¿ç”¨gitå°ä¹Œé¾Ÿä»£æ›¿æ•²å‘½ä»¤æŽ¨é€æ–‡ä»¶å¯ä»¥å‚è€ƒ
 https://www.cnblogs.com/xuanwotianming153/p/8504762.html
