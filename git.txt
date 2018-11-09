@@ -31,3 +31,27 @@ git push
 git push origin master
 使用git小乌龟代替敲命令推送文件可以参考
 https://www.cnblogs.com/xuanwotianming153/p/8504762.html
+
+文件权限修改
+chmod -R (u/g/o)(+/-)(rwx) file对文件及其子目录下所有文件进行权限修改，没有-R则只修改文件本身权限
+chmod 777 file 将文件的u，g，o权限都设置为rwx，4表示可读，2表示可写，1表示可执行
+
+更改文件所有权
+chown -R owner file递归修改文件用户
+chown -R owner :group file递归修改文件的用户和组
+
+用户与用户组
+在linux系统中唯一标识用户的是一个整数值，root用户的用户标识为0,1-499为系统用户，用于保障系统服务正常运行而不用于登录，500-60000为普通用户，添加用户系统在此范围内分配。
+cat  /etc/passwd查看用户账号和对应标识
+cat  /etc/group查看用户组和组标识号
+useradd 添加用户
+Useradd -g group user添加用户并设置主用户组
+adduser --group groupname创建用户组
+usermod -G groupname username将用户添加到用户组
+userdel删除用户
+passwd username修改用户密码
+groupadd/addgroup groupname添加用户组
+groupmod修改用户组
+groupdel删除用户组
+chown user file更改文件所有者
+Chgrp group file更改文件所属组
